@@ -5,9 +5,9 @@ from typing import TypedDict, List
 
 # 1. 모델 정의 (로컬 Llama.cpp 서버 연결)
 local_llm = ChatOpenAI(
-    base_url="http://localhost:8080/v1", # Llama.cpp 서버 주소
+    base_url="http://127.0.0.1:8888", # Llama.cpp 서버 주소
     api_key="lm-studio", # 아무 값이나 입력 (로컬이라 검증 안 함)
-    model="llama-3-8b-instruct", # 서버 실행 시 로드한 모델과 논리적 매칭
+    model="Qwen3-4B-Instruct-2507-IQ4_XS-4.54bpw", # 서버 실행 시 로드한 모델과 논리적 매칭
     temperature=0
 )
 
